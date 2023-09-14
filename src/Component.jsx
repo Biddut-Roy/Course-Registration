@@ -5,21 +5,24 @@ import { useEffect } from "react";
 
 const Component = () => {
 
-    const [data ,setData] = useState([]);
+    const [crouchData ,setCrouchData] = useState([]);
 
     useEffect(() => {
 
         fetch('Crouch.json')
         .then(res => res.json())
-        .then(data => setData(data))
+        .then(data => setCrouchData(data))
         
 
     },[])
+    // console.log(crouchData)
     return (
         <div>
+                <div className=" w-[75%] border-solid border-2 grid grid-cols-3 gap-4">
                 {
-                    data.map((item,i )=> <Cart key={i} item={item}></Cart> )
+                    crouchData.map((item,i )=> <Cart key={i} item={item}></Cart> )
                 }
+                </div>
         </div>
     );
 };

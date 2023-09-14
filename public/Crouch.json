@@ -1,68 +1,67 @@
-{
-    "courses": [
+ [
       {
         "img": "https://i.ibb.co/Yb73QJx/Rectangle-2-2.png",
         "crouch-name": "Introduction to C Programming",
         "credit": 3,
         "details": "Learn the fundamentals of the C programming language, including variables, loops, functions, and memory management.",
-        "price": 49.99
+        "price": 4900
       },
       {
         "img": "https://i.ibb.co/vcVp1hC/Rectangle-2-3.png",
         "crouch-name": "Introduction to Algorithms",
         "credit": 4,
         "details": "Explore the basics of algorithm design and analysis, covering sorting, searching, and data structures.",
-        "price": 59.99
+        "price": 5900
       },
       {
         "img": "https://i.ibb.co/Z1pkznH/Rectangle-2-4.png",
         "crouch-name": "Introduction to C++ for DSA",
         "credit": 3,
         "details": "Introduces C++ programming with a focus on data structures and algorithms for competitive programming.",
-        "price": 54.99
+        "price": 5400
       },
       {
         "img": "https://i.ibb.co/vBQHnBZ/Rectangle-3.png",
         "crouch-name": "Basic Data Structures",
         "credit": 2,
         "details": "Learn about fundamental data structures such as arrays, linked lists, stacks, and queues.",
-        "price": 39.99
+        "price": 3900
       },
       {
         "img": "https://i.ibb.co/HDVvqBg/Rectangle-2.png",
         "crouch-name": "Introduction to OOP Python",
         "credit": 3,
         "details": "Get started with object-oriented programming (OOP) using Python and learn about classes and inheritance.",
-        "price": 49.99
+        "price": 4900
       },
       {
         "img": "https://i.ibb.co/vzhLzTn/Rectangle-2-5.png",
         "crouch-name": "Software Engineering",
         "credit": 4,
         "details": "Explore software development methodologies, project management, and best practices.",
-        "price": 69.99
+        "price": 6900
       },
       {
         "img": "https://i.ibb.co/6wp0bdY/Rectangle-3-1.png",
         "crouch-name": "AWS , Cloud Computing",
         "credit": 3,
         "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        "price": 59.99
+        "price": 5900
       },
       {
         "img": "https://i.ibb.co/vcvz7hb/Rectangle-2-1.png",
         "crouch-name": "Database (MySQL)",
         "credit": 2,
         "details": "Learn the basics of database management using MySQL, including SQL queries and database design.",
-        "price": 44.99
+        "price": 4400
       },
       {
         "img": "https://i.ibb.co/KWV5H2Q/Rectangle-2-6.png",
         "crouch-name": "Problem-Solving Part",
         "credit": 1,
         "details": "Develop your problem-solving skills and algorithmic thinking to tackle complex programming challenges.",
-        "price": 29.99
+        "price": 2900
       }
     ]
-  }
+
   

@@ -1,25 +1,34 @@
 import PropTypes from 'prop-types';
+import { FaDollarSign } from 'react-icons/fa';
+import { BsBook } from 'react-icons/bs'; 
 
 const Cart = ({item}) => {
-    const {} = item;
+    const { img, credit, details, price } = item;
+
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
-                <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
+                <img src={img} alt="img" className="rounded-xl" />
             </figure>
-            <div className="card-body items-center text-center">
-                <h2 className="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div className="card-actions">
-                <button className="btn btn-primary">Buy Now</button>
+            <div className=" my-5 px-5 h-[210px] space-y-2">
+                <h2 className=" text-xl font-semibold">{item['crouch-name']}</h2>
+                <p className=' flex-wrap'>{details}</p>
+                <div className=' flex justify-between'>
+                    <h1 className=' flex items-center'><FaDollarSign />Price : {price}</h1>
+                    <h1 className=' flex items-center'><span className=' mx-2'><BsBook /></span>Credit : {credit}</h1>
+                </div>
+                <div className=" text-center">
+                <button className="btn btn-primary px-20 py-0 mt-4">Select</button>
                 </div>
             </div>
             </div>
         </div>
     );
 };
- Cart.prototype ={
-    item:PropTypes.object.isRequired,
+
+Cart.propTypes = {
+    item: PropTypes.object.isRequired,
  }
+
 export default Cart;
