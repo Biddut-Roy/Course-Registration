@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { FaDollarSign } from 'react-icons/fa';
 import { BsBook } from 'react-icons/bs'; 
 
-const Cart = ({item}) => {
+const Cart = ({item , selectBtn}) => {
     const { img, credit, details, price } = item;
 
     return (
@@ -19,7 +19,7 @@ const Cart = ({item}) => {
                     <h1 className=' flex items-center'><span className=' mx-2'><BsBook /></span>Credit : {credit}</h1>
                 </div>
                 <div className=" text-center">
-                <button className="btn btn-primary px-20 py-0 mt-4">Select</button>
+                <button className="btn btn-primary px-20 py-0 mt-4" onClick={()=> selectBtn(item)}>Select</button>
                 </div>
             </div>
             </div>
@@ -29,6 +29,7 @@ const Cart = ({item}) => {
 
 Cart.propTypes = {
     item: PropTypes.object.isRequired,
+    selectBtn: PropTypes.func.isRequired
  }
 
 export default Cart;

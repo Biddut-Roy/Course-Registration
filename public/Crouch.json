@@ -1,5 +1,6 @@
  [
       {
+        "id": 1,
         "img": "https://i.ibb.co/Yb73QJx/Rectangle-2-2.png",
         "crouch-name": "Introduction to C Programming",
         "credit": 3,
@@ -7,6 +8,7 @@
         "price": 4900
       },
       {
+        "id": 2,
         "img": "https://i.ibb.co/vcVp1hC/Rectangle-2-3.png",
         "crouch-name": "Introduction to Algorithms",
         "credit": 4,
@@ -14,6 +16,7 @@
         "price": 5900
       },
       {
+        "id": 3,
         "img": "https://i.ibb.co/Z1pkznH/Rectangle-2-4.png",
         "crouch-name": "Introduction to C++ for DSA",
         "credit": 3,
@@ -21,6 +24,7 @@
         "price": 5400
       },
       {
+        "id": 4,
         "img": "https://i.ibb.co/vBQHnBZ/Rectangle-3.png",
         "crouch-name": "Basic Data Structures",
         "credit": 2,
@@ -28,6 +32,7 @@
         "price": 3900
       },
       {
+        "id": 5,
         "img": "https://i.ibb.co/HDVvqBg/Rectangle-2.png",
         "crouch-name": "Introduction to OOP Python",
         "credit": 3,
@@ -35,6 +40,7 @@
         "price": 4900
       },
       {
+        "id": 6,
         "img": "https://i.ibb.co/vzhLzTn/Rectangle-2-5.png",
         "crouch-name": "Software Engineering",
         "credit": 4,
@@ -42,6 +48,7 @@
         "price": 6900
       },
       {
+        "id": 7,
         "img": "https://i.ibb.co/6wp0bdY/Rectangle-3-1.png",
         "crouch-name": "AWS , Cloud Computing",
         "credit": 3,
@@ -49,6 +56,7 @@
         "price": 5900
       },
       {
+        "id": 8,
         "img": "https://i.ibb.co/vcvz7hb/Rectangle-2-1.png",
         "crouch-name": "Database (MySQL)",
         "credit": 2,
@@ -56,6 +64,7 @@
         "price": 4400
       },
       {
+        "id": 9,
         "img": "https://i.ibb.co/KWV5H2Q/Rectangle-2-6.png",
         "crouch-name": "Problem-Solving Part",
         "credit": 1,
