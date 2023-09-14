@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Cart from "./cart/Cart";
 import { useEffect } from "react";
+import Sidebar from "./sidebar/Sidebar";
 
 
 const Component = () => {
@@ -15,14 +16,19 @@ const Component = () => {
         
 
     },[])
-    // console.log(crouchData)
     return (
         <div>
-                <div className=" w-[75%] border-solid border-2 grid grid-cols-3 gap-4">
+            <div className=" flex w-[96%] mx-auto gap-2">
+                
+            <div className=" w-[75%] border-solid border-2 grid grid-cols-3 gap-4">
                 {
                     crouchData.map((item,i )=> <Cart key={i} item={item}></Cart> )
                 }
                 </div>
+                <div className=" w-[20%] mx-auto bg-slate-50">
+                    <Sidebar></Sidebar>
+                </div>
+            </div>
         </div>
     );
 };
