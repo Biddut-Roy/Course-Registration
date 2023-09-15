@@ -1,8 +1,13 @@
-# React + Vite
+# Crouch Register Redme Questions Answer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Add at least 3 Project features :
 
-Currently, two official plugins are available:
+ - JSON takes the data from the data and shows it on each data card
+ - If you click on the card, the name of the card will be added to the sidebar
+ - After the card name is shown, the read time of that card will be added to the time
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Discuss how you managed the state in your assignment project:
+
+- In my project, I first loaded the data from the json file through useEffect state and stored it in useState. That data is sent through the mapping function to the card component. And the card component is dynamically shown to the browser through CardReact's virtual dome. Again by adding a click function on the card, the data of the selected card is again stored in useState in the previous component.
+
