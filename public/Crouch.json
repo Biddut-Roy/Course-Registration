@@ -3,7 +3,7 @@
         "id": 1,
         "img": "https://i.ibb.co/Yb73QJx/Rectangle-2-2.png",
         "crouch-name": "Introduction to C Programming",
-        "credit": 3,
+        "credit": 5,
         "details": "Learn the fundamentals of the C programming language, including variables, loops, functions, and memory management.",
         "price": 4900
       },
@@ -27,7 +27,7 @@
         "id": 4,
         "img": "https://i.ibb.co/vBQHnBZ/Rectangle-3.png",
         "crouch-name": "Basic Data Structures",
-        "credit": 2,
+        "credit": 3,
         "details": "Learn about fundamental data structures such as arrays, linked lists, stacks, and queues.",
         "price": 3900
       },
@@ -35,7 +35,7 @@
         "id": 5,
         "img": "https://i.ibb.co/HDVvqBg/Rectangle-2.png",
         "crouch-name": "Introduction to OOP Python",
-        "credit": 3,
+        "credit": 7,
         "details": "Get started with object-oriented programming (OOP) using Python and learn about classes and inheritance.",
         "price": 4900
       },
@@ -59,7 +59,7 @@
         "id": 8,
         "img": "https://i.ibb.co/vcvz7hb/Rectangle-2-1.png",
         "crouch-name": "Database (MySQL)",
-        "credit": 2,
+        "credit": 6,
         "details": "Learn the basics of database management using MySQL, including SQL queries and database design.",
         "price": 4400
       },
@@ -67,7 +67,7 @@
         "id": 9,
         "img": "https://i.ibb.co/KWV5H2Q/Rectangle-2-6.png",
         "crouch-name": "Problem-Solving Part",
-        "credit": 1,
+        "credit": 4,
         "details": "Develop your problem-solving skills and algorithmic thinking to tackle complex programming challenges.",
         "price": 2900
       }

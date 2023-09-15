@@ -8,7 +8,9 @@ const Component = () => {
 
     const [crouchData ,setCrouchData] = useState([]);
     const [ selectData , setClickData] = useState([]);
-    const [hourRemaining , setHourRemaining] = useState(20)
+    const [hourRemaining , setHourRemaining] = useState(20);
+    const [total ,setTotal] = useState(0);
+    const [price , setPrice] = useState(0);
 
     useEffect(() => {
 
@@ -20,17 +22,31 @@ const Component = () => {
     const selectBtn = (selectedItem) =>{
             const findData = selectData.find(findId => findId.id == selectedItem.id)
             const remainHour = selectedItem.credit;
+            const totalCreditHour = selectedItem.credit;
+            setTotal(totalCreditHour)
 
             if (findData) {
                 alert(' allready select a data , please try another data')
             }else{
-                setClickData([...selectData , selectedItem])
                 const totalHour = hourRemaining - remainHour ;
                 if (totalHour < 0) {
-                    alert(' Your time is gone')
+                    alert('Your stay time to long , please clear and add again')
                 }else{
+                    const addTotal = total + totalCreditHour;
+                    if (addTotal > 20) {
+                        alert('your credit time cannot upper then 20hr')
+                    }else(
+                        setTotal(addTotal)
+                        
+                    )
                     setHourRemaining(totalHour)
+                    setClickData([...selectData , selectedItem])
+                    const totalPrices = price + selectedItem.price;
+                    setPrice(totalPrices)
+                    
                 }
+
+               
             }
         
    
@@ -47,7 +63,7 @@ const Component = () => {
                 }
                 </div>
                 <div className=" w-[20%] mx-auto bg-slate-50">
-                   <Sidebar selectData={selectData}  hourRemaining={hourRemaining}/>
+                   <Sidebar selectData={selectData}  hourRemaining={hourRemaining} total={total} price={price}/>
                 </div>
             </div>
         </div>
