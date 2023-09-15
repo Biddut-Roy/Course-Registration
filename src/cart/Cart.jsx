@@ -16,7 +16,7 @@ const Cart = ({item , selectBtn}) => {
                 <p className=' flex-wrap'>{details}</p>
                 <div className=' flex justify-between'>
                     <h1 className=' flex items-center'><FaDollarSign />Price : {price}</h1>
-                    <h1 className=' flex items-center'><span className=' mx-2'><BsBook /></span>Credit : {credit}</h1>
+                    <h1 className=' flex items-center'><span className=' mx-2'><BsBook /></span>Credit : {credit}hr</h1>
                 </div>
                 <div className=" text-center">
                 <button className="btn btn-primary px-20 py-0 mt-4" onClick={()=> selectBtn(item)}>Select</button>

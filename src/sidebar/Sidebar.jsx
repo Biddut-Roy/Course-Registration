@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 
-const Sidebar = ({ selectData }) => {
+const Sidebar = ({ selectData , hourRemaining }) => {
   return (
     <div>
       <div className="pl-3">
-        <p className="text-blue-500 font-bold text-xl my-8 border-solid border-b-2">Credit Hour Remaining 7 hr</p>
+        <p className="text-blue-500 font-bold text-xl my-6 border-solid border-b-2">Credit Hour Remaining {hourRemaining} hr</p>
         <h2 className="font-bold text-2xl">Course Name</h2>
         <ul className="mt-2 pl-3">
           {selectData.map(element => (
@@ -22,6 +22,7 @@ const Sidebar = ({ selectData }) => {
 
 Sidebar.propTypes = {
   selectData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  hourRemaining: PropTypes.string.isRequired,
 };
 
 export default Sidebar;

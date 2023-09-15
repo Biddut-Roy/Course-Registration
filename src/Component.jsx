@@ -8,6 +8,7 @@ const Component = () => {
 
     const [crouchData ,setCrouchData] = useState([]);
     const [ selectData , setClickData] = useState([]);
+    const [hourRemaining , setHourRemaining] = useState(20)
 
     useEffect(() => {
 
@@ -18,11 +19,18 @@ const Component = () => {
 
     const selectBtn = (selectedItem) =>{
             const findData = selectData.find(findId => findId.id == selectedItem.id)
+            const remainHour = selectedItem.credit;
 
             if (findData) {
                 alert(' allready select a data , please try another data')
             }else{
                 setClickData([...selectData , selectedItem])
+                const totalHour = hourRemaining - remainHour ;
+                if (totalHour < 0) {
+                    alert(' Your time is gone')
+                }else{
+                    setHourRemaining(totalHour)
+                }
             }
         
    
@@ -39,7 +47,7 @@ const Component = () => {
                 }
                 </div>
                 <div className=" w-[20%] mx-auto bg-slate-50">
-                   <Sidebar selectData={selectData} />
+                   <Sidebar selectData={selectData}  hourRemaining={hourRemaining}/>
                 </div>
             </div>
         </div>
