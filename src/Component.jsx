@@ -18,6 +18,7 @@ const Component = () => {
 
     const selectBtn = (selectedItem) =>{
             const findData = selectData.find(findId => findId.id == selectedItem.id)
+
             if (findData) {
                 alert(' allready select a data , please try another data')
             }else{
@@ -38,7 +39,7 @@ const Component = () => {
                 }
                 </div>
                 <div className=" w-[20%] mx-auto bg-slate-50">
-                    <Sidebar></Sidebar>
+                   <Sidebar selectData={selectData} />
                 </div>
             </div>
         </div>
