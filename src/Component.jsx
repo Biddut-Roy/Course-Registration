@@ -57,12 +57,12 @@ const Component = () => {
         <div>
             <div className=" flex w-[96%] mx-auto gap-2">
                 
-            <div className=" w-[75%] border-solid border-2 grid grid-cols-3 gap-4">
+            <div className="  lg:w-[75%] grid lg:grid-cols-3 md:grid-cols-2 gap-2 md:gap-3 lg:gap-4">
                 {
                     crouchData.map((item,i )=> <Cart key={i} item={item} selectBtn={selectBtn}></Cart> )
                 }
                 </div>
-                <div className=" w-[20%] mx-auto bg-slate-50">
+                <div className=" lg:w-[20%] mx-auto bg-slate-50 rounded-2xl">
                    <Sidebar selectData={selectData}  hourRemaining={hourRemaining} total={total} price={price}/>
                 </div>
             </div>
